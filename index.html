@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Gerenciador de tarefas</title>
+</head>
+<body>
+    <header>
+        <img src="./src/assets/logo.png" alt="Logo do gerenciador de tarefas">
+    </header>
+    <main>
+        <div class="crud">
+            <div class="crud__add-task">
+                <h2>Adicionar nova tarefa</h2>
+                <form action="">
+                    <p>Título</p>
+                    <input class="input" type="text" name="post-task-description" placeholder="Digite a descrição da tarefa">
+                    <p>Prioridade</p>
+                    <select class="select" name="post-task-priority" >
+                        <option value="baixa">Baixa</option>
+                        <option value="media">Média</option>
+                        <option value="alta">Alta</option>
+                    </select>
+                    <p>Data Limite</p>
+                    <input class="input" type="date" name="post-task-date" placeholder="Digite a data limite da tarefa">
+                    <button class="main-buttons" data-enviar-btn type="button">Adicionar tarefa</button>
+                </form>
+            </div>
+            <div class="crud__task__search">
+                <form class="form__search" action="">
+                    <button class="button-search"><i data-lucide="search"></i></button>
+                    <input class="input-search" type="text" placeholder="pesquisa...">
+                </form>
+            </div>
+            <div class="crud__task__list">
+                <h2>Lista de Tarefas</h2>
+                <p>Gerencie suas tarefas abaixo.</p>
+                <section>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>tarefa</th>
+                                <th>status</th>
+                                <th>ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="lista-tarefas">
+                        </tbody>
+                    </table>
+                </section>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a class="link" href="https://github.com/Nathan-runner/Gerenciador-de-Tarefas.git"><i data-lucide="github"></i></a>
+            <a class="link" href="https://www.instagram.com/nath.aaahkk?igsh=MW9hYW4wMHF4bWN4cg=="><i data-lucide="instagram"></i></a>
+            <a href="https://www.linkedin.com/in/nathansiqueiradev"><i data-lucide="linkedin"></i></a>
+        </div>
+        <p>Gerenciador de Tarefas - Desenvolvido por Nathan</p>
+
+    </footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="./src/js/main.js"></script>
+</body>
+</html>

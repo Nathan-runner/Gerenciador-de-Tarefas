@@ -7,10 +7,12 @@
 // module.exports = app
 
 const express = require('express');
+const cors = require('cors')
 const tarefasRouter = require('./src/routes/tarefasRouter.js');
 
 const app = express();
 
+app.use(cors());
 // Middleware para parsing JSON
 app.use(express.json());
 
